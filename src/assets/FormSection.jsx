@@ -23,7 +23,7 @@ export default function FormSection({link}) {
 
     function handleInputTargetparam(e){
        const { id, value } = e.target;
-       console.log(value, id);
+      //  console.log(value, id);
 
        switch (id) {
         case "author":
@@ -40,7 +40,7 @@ export default function FormSection({link}) {
 
         case "status":
             setState( value === "draft" ? true : false);
-            console.log(isState);
+            // console.log(isState);
             break;
        }
     }
@@ -56,7 +56,7 @@ export default function FormSection({link}) {
             title: isTitle
         }
 
-        console.log(object_post)
+        // console.log(object_post)
         return object_post;
     }
 
