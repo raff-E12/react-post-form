@@ -14,7 +14,7 @@ function App() {
   
       async function isData(){
           const data_wait = await handleFetch_Data();
-          console.log(data_wait);
+          // console.log(data_wait);
           setApi(data_wait);
       }
   
@@ -24,7 +24,7 @@ function App() {
 
   return (
     <>
-    <FormSection />
+    <FormSection link={isApi}/>
     <Posts link={isApi}/>
     </>
   )

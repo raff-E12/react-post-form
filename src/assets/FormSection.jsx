@@ -11,13 +11,15 @@ import { local_posts, handleFetch_Data, handlePostParmsposts } from './FetchApi'
  */
 
 
-export default function FormSection() {
+export default function FormSection({link}) {
+    
+    const list_export = link;
 
     const [isAuthor, setAuthor] = useState("");
     const [isTitle, setTitle] = useState("");
     const [isText, setText] = useState("");
     const [isState, setState] = useState(false);
-    const [isID, setID] = useState(989)
+    const [isID, setID] = useState(list_export.length);
 
     function handleInputTargetparam(e){
        const { id, value } = e.target;
