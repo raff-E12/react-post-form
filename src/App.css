@@ -119,8 +119,7 @@
 }
 
 .container-head{
-  width: 400px;
-  margin-right: 200px;
+  width: auto;
   border: 2px solid var(--secondary);
   border-radius: 10px;
   overflow-y: scroll;
@@ -145,6 +144,16 @@
 .card a{
   font-weight: 500;
   margin-left: 10px;
+}
+
+.cont-flex{
+  width: 380px;
+  margin-right: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
 }
 
 /***** End CSS Section Base Add *****/
