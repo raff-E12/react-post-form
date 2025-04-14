@@ -14,13 +14,13 @@ export default function Posts({link}) {
     <div className='container-lg container-head'>
         {isApi.map( (element, index) =>{
             return(
-                <div class="card" style={{width: "18rem"}} key={index}>
-                <div class="card-body">
-                  <h5 class="card-title">{element.title}</h5>
-                  <h6 class="card-subtitle mb-2 text-body-secondary">{element.author}</h6>
-                  <p class="card-text">{element.body}</p>
-                  <a href="#" class="card-link">Post link</a>
-                  <a href="#" class="card-link">Another Posts</a>
+                <div className="card" style={{width: "18rem"}} key={index}>
+                <div className="card-body">
+                  <h5 className="card-title">{element.title}</h5>
+                  <h6 className="card-subtitle mb-2 text-body-secondary">{element.author}</h6>
+                  <p className="card-text">{element.body}</p>
+                  <a href="#" className="card-link">Post link</a>
+                  <a href="#" className="card-link">Another Posts</a>
                 </div>
               </div>
             )
