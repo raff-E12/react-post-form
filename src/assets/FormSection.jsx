@@ -52,7 +52,7 @@ export default function FormSection({link}) {
             author: isAuthor,
             body: isText,
             id: isID,
-            public: setState,
+            public: isState,
             title: isTitle
         }
 

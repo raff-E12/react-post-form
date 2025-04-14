@@ -35,7 +35,7 @@ async function handleFetch_Data(){
 
 async function handlePostParmsposts(obj) {
     try {
-        const data_res = await axios.post(url, obj);
+        const data_res = await axios.post(url_api, obj);
         const response_data = data_res.data;
         console.log(response_data);
         return data_res;
